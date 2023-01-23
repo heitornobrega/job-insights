@@ -1,4 +1,7 @@
 from typing import Union, List, Dict
+import src.insights.jobs as jobs
+
+# import jobs
 
 
 def get_max_salary(path: str) -> int:
@@ -16,7 +19,22 @@ def get_max_salary(path: str) -> int:
     int
         The maximum salary paid out of all job opportunities
     """
-    raise NotImplementedError
+    # raise NotImplementedError
+    data = jobs.read(path)
+    all_max_salaries = set()
+    for max_salary in data:
+        if (
+            len(max_salary["max_salary"]) > 0
+            and max_salary["max_salary"] != "invalid"
+        ):
+            teste = int(max_salary["max_salary"])
+            all_max_salaries.add(teste)
+
+    max_salary = max(list(all_max_salaries))
+    return max_salary
+
+
+print(get_max_salary("data/jobs.csv"))
 
 
 def get_min_salary(path: str) -> int:
