@@ -1,5 +1,5 @@
 from typing import List, Dict
-#teste
+
 
 def get_unique_industries(path: str) -> List[str]:
     """Checks all different industries and returns a list of them
