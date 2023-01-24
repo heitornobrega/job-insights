@@ -1,8 +1,24 @@
 from typing import Union, List, Dict
 import src.insights.jobs as jobs
+
 # import jobs
 
-dict_test = {'job_title': 'Data Engineer, Senior with Security Clearance', 'company': 'Booz Allen Hamilton', 'state': 'VA', 'city': 'Herndon', 'min_salary': '91443', 'max_salary': '155868', 'job_desc': "Job Number: R0083334 Data Engineer, Senior\n\nKey Role: Develop data pipelines us ing Big Data services available in the Cloud. Architect data repositories, stand up data platforms, and write c us tom code for data ingestion, transformation, and aggregation. Create data models to support b us iness requirements. Work as a client-facing consultant providing solutions to Big Data us e cases. Develop continuo us integration ( CI ) and continuo us delivery ( CD ) pipelines to support automated deployment and automated testing. Basic Qualifications: -6+ years of experience with a modern programming language, including Python or Java -4+ years of experience with working in an agile development environment -4+ years of experience with developing extract, transform, load ( ETL ) and data pipelines -3+ years of experience with SQL -2+ years of experience with working in a Big Data environment -Ability to learn te chn ical concepts -Secret clearance -BA or BS degree Additional Qualifications: -Experience with Cloudera or Hortonworks -Experience with Hadoop ecosystem -Experience with data modeling concepts -Experience with leading a te chn ical team -Possession of excellent analytical and problem-solving skills -Possession of excellent oral and written communication skills, including communicating with multiple functional groups Clearance: Applicants selected will be subject to a security investigation and may need to meet eligibility requirements for access to classified information; Secret clearance is required. We're an EOE that empowers our people-no matter their race, color, religion, sex, gender identity, sexual orientation, national origin, disability, veteran status, or other protected characteristic-to fearlessly drive change.", 'industry': 'Business Services', 'rating': '3.7', 'date_posted': '2020-05-02', 'valid_until': '2020-06-06', 'job_type': 'FULL_TIME', 'id': '3323'}
+dict_test = {
+    "job_title": "Data Engineer, Senior with Security Clearance",
+    "company": "Booz Allen Hamilton",
+    "state": "VA",
+    "city": "Herndon",
+    "min_salary": "91443",
+    "max_salary": "155868",
+    "job_desc": "Job Number: R0083334 Data Engineer, Senior\n\nKey Role: Develop data pipelines us ing Big Data services available in the Cloud. Architect data repositories, stand up data platforms, and write c us tom code for data ingestion, transformation, and aggregation. Create data models to support b us iness requirements. Work as a client-facing consultant providing solutions to Big Data us e cases. Develop continuo us integration ( CI ) and continuo us delivery ( CD ) pipelines to support automated deployment and automated testing. Basic Qualifications: -6+ years of experience with a modern programming language, including Python or Java -4+ years of experience with working in an agile development environment -4+ years of experience with developing extract, transform, load ( ETL ) and data pipelines -3+ years of experience with SQL -2+ years of experience with working in a Big Data environment -Ability to learn te chn ical concepts -Secret clearance -BA or BS degree Additional Qualifications: -Experience with Cloudera or Hortonworks -Experience with Hadoop ecosystem -Experience with data modeling concepts -Experience with leading a te chn ical team -Possession of excellent analytical and problem-solving skills -Possession of excellent oral and written communication skills, including communicating with multiple functional groups Clearance: Applicants selected will be subject to a security investigation and may need to meet eligibility requirements for access to classified information; Secret clearance is required. We're an EOE that empowers our people-no matter their race, color, religion, sex, gender identity, sexual orientation, national origin, disability, veteran status, or other protected characteristic-to fearlessly drive change.",
+    "industry": "Business Services",
+    "rating": "3.7",
+    "date_posted": "2020-05-02",
+    "valid_until": "2020-06-06",
+    "job_type": "FULL_TIME",
+    "id": "3323",
+}
+
 
 def get_max_salary(path: str) -> int:
     """Get the maximum salary of all jobs
@@ -102,7 +118,6 @@ def matches_salary_range(job: Dict, salary: Union[int, str]) -> bool:
         return True
 
 
-
 def filter_by_salary_range(
     jobs: List[dict], salary: Union[str, int]
 ) -> List[Dict]:
@@ -123,9 +138,6 @@ def filter_by_salary_range(
     # raise NotImplementedError
     valid_jobs = []
     for job in jobs:
-        if(matches_salary_range(job, salary)):
+        if matches_salary_range(job, salary):
             valid_jobs.append(job)
     return valid_jobs
-
-            
-        
