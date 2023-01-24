@@ -1,5 +1,7 @@
-# from src.pre_built.counter import count_ocurrences
+from src.pre_built.counter import count_ocurrences
 
 
 def test_counter():
-    pass
+    quantidade_palavras = count_ocurrences('data/jobs.csv', 'python')
+    assert quantidade_palavras == 1639
+
