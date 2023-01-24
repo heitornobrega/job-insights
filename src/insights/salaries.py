@@ -3,6 +3,7 @@ import src.insights.jobs as jobs
 
 # import jobs
 
+
 def get_max_salary(path: str) -> int:
     """Get the maximum salary of all jobs
 
