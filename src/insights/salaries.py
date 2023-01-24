@@ -125,6 +125,6 @@ def filter_by_salary_range(
         try:
             if matches_salary_range(job, salary):
                 valid_jobs.append(job)
-        except:
+        except Exception:
             continue
     return valid_jobs
