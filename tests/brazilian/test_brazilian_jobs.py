@@ -1,7 +1,5 @@
 from src.pre_built.brazilian_jobs import read_brazilian_file
 
-from src.insights.jobs import read
-
 
 def test_brazilian_jobs():
     file_path = "tests/mocks/brazilians_jobs.csv"
