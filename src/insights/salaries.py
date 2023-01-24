@@ -138,6 +138,9 @@ def filter_by_salary_range(
     # raise NotImplementedError
     valid_jobs = []
     for job in jobs:
-        if matches_salary_range(job, salary):
-            valid_jobs.append(job)
+        try:
+            if matches_salary_range(job, salary):
+                valid_jobs.append(job)
+        except:
+                continue
     return valid_jobs
