@@ -94,17 +94,13 @@ def matches_salary_range(job: Dict, salary: Union[int, str]) -> bool:
         int_job_max_salary = int(job["max_salary"])
     except:
         raise ValueError
-
     if int_job_min_salary > int_job_max_salary:
         raise ValueError
     if int_salary < int_job_min_salary or int_salary > int_job_max_salary:
         return False
     else:
         return True
-    
-    
 
-# print(matches_salary_range(dict_test, 155865))
 
 
 def filter_by_salary_range(
@@ -124,4 +120,12 @@ def filter_by_salary_range(
     list
         Jobs whose salary range contains `salary`
     """
-    raise NotImplementedError
+    # raise NotImplementedError
+    valid_jobs = []
+    for job in jobs:
+        if(matches_salary_range(job, salary)):
+            valid_jobs.append(job)
+    return valid_jobs
+
+            
+        
