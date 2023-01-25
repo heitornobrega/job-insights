@@ -34,13 +34,14 @@ def flask_image():
 @bp.route("/")
 def index():
     md = """
-<p align="center">
-    <img src="/.images/job.png" alt="Logo da Aplicação" width="800"/>
-</p>
-<h2 align="center">
-    Boas-vindas ao Job Insights<br><br>
-</h2>
-        """
+
+    <p align="center">
+        <img src="/.images/job.png" alt="Logo da Aplicação" style="max-width: 100%; height: auto;"/>
+    </p>
+    <h2 align="center">
+        Boas-vindas ao Job Insights<br><br>
+    </h2>
+    """
     return render_template("index.jinja2", md=md)
 
 
