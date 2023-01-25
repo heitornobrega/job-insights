@@ -7,12 +7,12 @@ This project aimed to implement data analyses on a set of job data. These analys
 The data used in this project has been extracted from the Glassdoor website and obtained through Kaggle, a platform providing datasets for data scientists.
 
 ## Skills Developed
-- Using the Python interactive terminal
-- Utilizing conditional and looping structures
-- Utilizing built-in Python functions
+- Python interactive terminal
+- Conditional and looping structures
+- Built-in Python functions
 - Handling exceptions
-- Performing file manipulation
-- Writing functions
+- File manipulation
+- Function writing
 - Writing tests with Pytest
 - Writing and importing your own modules
 
