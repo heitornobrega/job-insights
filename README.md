@@ -2,7 +2,7 @@
 
 ![Cover Image](https://raw.githubusercontent.com/heitornobrega/job-insights/main/.images/job.png)
 
-This project aimed to implement data analyses on a set of job data. These analyses were incorporated into a web application built with Flask, a popular web framework in the Python community. Additionally, I had the opportunity to write tests for my data analysis implementation and, as an extra challenge, I wrote a new route and view using Flask.
+This project is a website that aims to display job data. These data were incorporated into a web application built with Flask, a popular web framework in the Python community. Additionally, I had the opportunity to write tests for the application and, as an extra challenge, I wrote a new route and view using Flask.
 
 The data used in this project has been extracted from the Glassdoor website and obtained through Kaggle, a platform providing datasets for data scientists.
 
