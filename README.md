@@ -22,7 +22,7 @@ To check the running application, click on the following link: [Job Insights](ht
 
 ## Getting started
 
-To get started on this project, you will need to have a basic understanding of Python and Flask. It is also recommended to have some experience with data manipulation and analysis.
+To get started on this project, you will need to have a basic understanding of Python and Flask.
 
 1. Fork and clone this repository to your local machine.
 2. Install the necessary dependencies listed in the requirements.txt file.
