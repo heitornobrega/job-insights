@@ -6,6 +6,10 @@ This project is a website that aims to display job data. These data were incorpo
 
 The data used in this project has been extracted from the Glassdoor website and obtained through Kaggle, a platform providing datasets for data scientists.
 
+## Demo
+
+To check the running application, click on the following link: [Job Insights](https://job-insights.onrender.com/)
+
 ## Skills Developed
 - Python interactive terminal
 - Conditional and looping structures
